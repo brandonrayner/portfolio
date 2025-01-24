@@ -1,0 +1,60 @@
+Battlegrid for mundane task? Harvest trees/rocks/etc, traverse hazards. Not just for combat.
+Characters with varied skills and not just all combat focused. Like Etrian Odyssey with mine/chop/take skills, but more than just harvesting. Speed/Jump/Build
+
+Turnbased mode (combat) and no-pressure mode (obstacle)
+
+continuous dungeon? one long dungeon with every feature, automate until party falls, playback of failed fight
+smaller dungeons to farm resources, over time generation based on performance
+
+procedural generation and seed selection?
+depths get harder to ensure it's difficult to run infinitely; to a cap (early game areas should be easier to farm and might allow it?)
+default seed at each tier that always has at least one of a resource; but low overall
+
+Battle cycle
+- Farm, return, rest, repeat
+- HP, Stamina, MP; when any resource runs out, return home (team HP? team Stamina?)
+- Different resting periods for different resources? (HP most; Stamina least)
+- Probably don't do the gambits in v1
+
+3 categories:
+Traversal - hazard, gap, climb
+Combat
+Harvest
+
+///////
+
+UI Design
+- Header at the top with some info: currencies
+- Overview
+- Deploy to area
+  - exploration setup
+  - exploration in progress
+- Team management
+  - equip unit
+  - manage abilities
+  - hire new units
+  - form teams?
+- Town management
+  - existing structures
+  - buildable structures
+- options menu (save/load/tbd)
+
+
+
+
+
+popover:
+https://www.w3schools.com/tags/att_popover.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using
+
+tabs:
+https://www.w3schools.com/howto/howto_js_tabs.asp
+
+javascript change css
+https://www.w3schools.com/js/js_htmldom_css.asp
+
+Bootstrap for templates and prebuilt code
+https://getbootstrap.com/
+
+sleep, awake, async, gameloop
+https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
