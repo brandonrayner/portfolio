@@ -1,2 +1,2 @@
 # portfolio
-https://brandonrayner.github.io
+https://brandonrayner.github.io/portfolio/
