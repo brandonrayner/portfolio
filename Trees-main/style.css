@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: LightGray;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+h2 {
+  color: LightGray;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  text-align: center;
+}
+
+p {
+  font-family: "Monaco", monospace;
+  font-size: 16px;
+  color: LightGray;
+  text-align: center
+}
+
+.tags {
+  font-family: "Monaco", monospace;
+  font-size: 16px;
+  color: LightGray;
+  text-align: left;
+}
+
+.main {
+  border: 3px solid GhostWhite;
+}
+
+.buttons {
+  border: 3px solid GhostWhite;
+  margin: 5px;
+}
+
+.buttons1 {
+  width: 100%; 
+  display: table;
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.buttons-outer{
+  display: table-cell
+}
+
+.stats {
+  border: 3px solid GhostWhite;
+  margin: 5px;
+  display:float;
+}
+
+this was the space between the paragraph and the buttons - margin-top: 450px; margin-bottom: 50px;

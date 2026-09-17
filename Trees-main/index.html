@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>The Forest</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+<h1>The Forest</h1>
+
+<div style="height:500px; width: 100%; display: table;">
+    <div style="display: table-row">
+        <div style="vertical-align: top" class="buttons-outer"><div class="stats">
+          <h2>Character Status:</h2>
+          <p class="tags" id="day"> Day: 1</p>
+          <p class="tags" id="health"> Health: 100%</p>
+          <p class="tags" id="hunger"> Hunger: 100%</p>
+          <p class="tags" id="thirst"> Thirst: 100%</p>
+          <p class="tags" id="warmth"> Warmth: 100%</p>
+        </div></div>
+        <div style="vertical-align: bottom" class="buttons-outer"><div><img class="image" src="frog.jpg" width=500px height=500px></div></div>
+        <div style="vertical-align: top" class="buttons-outer"><div class="buttons"><h2>Inventory:</h2></div></div>
+    </div>
+</div>
+
+<div class="main">
+
+<p>You wake up in the middle of the forest, confused.</p>
+<p>The air is slightly damp and the air is uncomfortably chilly.</p>
+<p>Your stomach growls, indicating that it's been awhile since you've eaten.</p> 
+
+<div class="buttons1">
+    <div style="display: table-row">
+        <div class="buttons-outer"><div class="buttons" onclick="getFood()"><p>Look for food</p></div></div>
+        <div class="buttons-outer"><div class="buttons" onclick="getMaterials()"><p>Look for materials</p></div></div>
+        <div class="buttons-outer"><div class="buttons" onclick="getShelter()"><p>Look for shelter</p></div></div>
+    </div>
+
+</div>
+
+</body>
