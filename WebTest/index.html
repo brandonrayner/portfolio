@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GameProject?</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="initialize()">
+
+<div class="tablist">
+	<div class="innertab" onclick="tabactive('frog')">Frog</div>
+	<div class="innertab" onclick="tabactive('orange')" >Orange</div>
+	<div class="innertab" onclick="tabactive('skeleton')" >Skeleton</div>
+</div>
+<br/>
+<br/>
+<div class="tabcontent" id="frog">
+	<h3>Click the Frog</h3>
+	<img src="frog.jpg" width=100px height=100px class="frog" id="frogpic" onclick="getfrog(1)">
+	<h3 id="frogcount">You have 0 frogs</h3>
+</div>
+
+<div class="tabcontent" id="orange">
+	<h3>Click the Orange</h3>
+	<img src="orange.jpg" width=100px height=100px class="orange" id="orangepic" onclick="getorange(1)">
+	<h3 id="orangecount">You have 0 oranges</h3>
+</div>
+
+<div class="tabcontent" id="skeleton">
+	<h3>Click the Skeletons</h3>
+	<img src="skeleton.png" width=100px height=100px class="skeleton" id="skeletonpic" onclick="getskeleton(1)">
+	<h3 id="skeletoncount">You have 0 skeletons</h3>
+</div>
+<br/>
+
+<br/>
+<button popovertarget="backdrop-popover"> Popover Open</button>
+<br/>
+<br/>
+<!-- <div popover="auto" id="mypopover">Popover!<br/><button popovertarget="mypopover">Close</button></div> -->
+
+<div popover="auto" popovertarget="backdrop-popover" id="backdrop-popover"><div id="inner-popover">Popover!<br/><button popovertarget="backdrop-popover">Close</button></div></div>
+
+<button onclick="battlegrid_update()">gridtest</button><p>Press gridtest to put units in cells. Click two cells on the player side (P) to swap their contents</p>
+
+<div id="battlegrid" style="display:table">
+	<div id="R1" style="display:table-row">
+		<div class="battlecell" id="P20" style="display:table-cell" onclick="cell_select('P20')">P20</div>
+		<div class="battlecell" id="P10" style="display:table-cell" onclick="cell_select('P10')">P10</div>
+		<div class="battlecell" id="P00" style="display:table-cell" onclick="cell_select('P00')">P00</div>
+		<div class="battlecell gapcell"  id="M1" style="display:table-cell">zzz</div>
+		<div class="battlecell" id="E00" style="display:table-cell" onclick="cell_select('E00')">E00</div>
+		<div class="battlecell" id="E10" style="display:table-cell" onclick="cell_select('E10')">E10</div>
+		<div class="battlecell" id="E20" style="display:table-cell" onclick="cell_select('E20')">E20</div>
+	</div>
+	<div id="R2" style="display:table-row">
+		<div class="battlecell" id="P21" style="display:table-cell" onclick="cell_select('P21')">P21</div>
+		<div class="battlecell" id="P11" style="display:table-cell" onclick="cell_select('P11')">P11</div>
+		<div class="battlecell" id="P01" style="display:table-cell" onclick="cell_select('P01')">P01</div>
+		<div class="battlecell gapcell"  id="M2" style="display:table-cell">zzz</div>
+		<div class="battlecell" id="E01" style="display:table-cell" onclick="cell_select('E01')">E01</div>
+		<div class="battlecell" id="E11" style="display:table-cell" onclick="cell_select('E11')">E11</div>
+		<div class="battlecell" id="E21" style="display:table-cell" onclick="cell_select('E21')">E21</div>
+	</div>
+	<div id="R3" style="display:table-row">
+		<div class="battlecell" id="P22" style="display:table-cell" onclick="cell_select('P22')">P22</div>
+		<div class="battlecell" id="P12" style="display:table-cell" onclick="cell_select('P12')">P12</div>
+		<div class="battlecell" id="P02" style="display:table-cell" onclick="cell_select('P02')">P02</div>
+		<div class="battlecell gapcell"  id="M3" style="display:table-cell">zzz</div>
+		<div class="battlecell" id="E02" style="display:table-cell" onclick="cell_select('E02')">E02</div>
+		<div class="battlecell" id="E12" style="display:table-cell" onclick="cell_select('E12')">E12</div>
+		<div class="battlecell" id="E22" style="display:table-cell" onclick="cell_select('E22')">E22</div>
+	</div>
+</div>
+<button onclick="gameLoopPause(1000)">Start/Stop</button>
+<button onclick="gameLoopSpeed(1000)">Speed 1x</button>
+<button onclick="gameLoopSpeed(1000/2)">Speed 2x</button>
+<button onclick="gameLoopSpeed(1000/4)">Speed 4x</button>
+<button onclick="gameLoopSpeed(1000/8)">Speed 8x</button>
+<div id="loopcounter">Counter is 0</div>
+</body>
