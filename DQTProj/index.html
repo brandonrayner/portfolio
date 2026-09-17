@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DQTStats</title>
+  <link rel="stylesheet" type="text/css" href="interface.css" />
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+
+<div>Click on any portrait to display weakness/resistances</div>
+<div class="headrow">
+    <div class="weakbox" id="icon"></div>
+    <div class="weakbox" id="name"></div>
+    <div class="weakbox" id="frizz" style="background-image: url('./icons/frizz.png')"></div>
+    <div class="weakbox" id="sizz" style="background-image: url('./icons/sizz.png')"></div>
+    <div class="weakbox" id="crack" style="background-image: url('./icons/crack.png')"></div>
+    <div class="weakbox" id="woosh" style="background-image: url('./icons/woosh.png')"></div>
+    <div class="weakbox" id="bang" style="background-image: url('./icons/bang.png')"></div>
+    <div class="weakbox" id="zap" style="background-image: url('./icons/zap.png')"></div>
+    <div class="weakbox" id="zam" style="background-image: url('./icons/zam.png')"></div>
+    <div class="weakbox" id="sleep" style="background-image: url('./icons/sleep.png')"></div>
+    <div class="weakbox" id="confusion" style="background-image: url('./icons/confuse.png')"></div>
+    <div class="weakbox" id="paralysis" style="background-image: url('./icons/paralyze.png')"></div>
+    <div class="weakbox" id="stun" style="background-image: url('./icons/stun.png')"></div>
+    <div class="weakbox" id="poison" style="background-image: url('./icons/poison.png')"></div>
+    <div class="weakbox" id="plock" style="background-image: url('./icons/plock.png')"></div>
+    <div class="weakbox" id="slock" style="background-image: url('./icons/slock.png')"></div>
+    <div class="weakbox" id="mlock" style="background-image: url('./icons/mlock.png')"></div>
+    <div class="weakbox" id="block" style="background-image: url('./icons/block.png')"></div>
+    <div class="weakbox" id="hobble" style="background-image: url('./icons/hobble.png')"></div>
+    <div class="weakbox" id="blind" style="background-image: url('./icons/blind.png')"></div>
+    <div class="weakbox" id="curse" style="background-image: url('./icons/curse.png')"></div>
+    <div class="weakbox" id="charm" style="background-image: url('./icons/charm.png')"></div>
+</div>
+<div class="monster" id="mon1" onclick="selectme(1)">
+    <div class="weakbox" id="icon1"></div>
+    <div class="weakbox" id="name1"></div>
+    <div class="weakbox" id="frizz1"></div>
+    <div class="weakbox" id="sizz1"></div>
+    <div class="weakbox" id="crack1"></div>
+    <div class="weakbox" id="woosh1"></div>
+    <div class="weakbox" id="bang1"></div>
+    <div class="weakbox" id="zap1"></div>
+    <div class="weakbox" id="zam1"></div>
+    <div class="weakbox" id="sleep1"></div>
+    <div class="weakbox" id="confusion1"></div>
+    <div class="weakbox" id="paralysis1"></div>
+    <div class="weakbox" id="stun1"></div>
+    <div class="weakbox" id="poison1"></div>
+    <div class="weakbox" id="plock1"></div>
+    <div class="weakbox" id="slock1"></div>
+    <div class="weakbox" id="mlock1"></div>
+    <div class="weakbox" id="block1"></div>
+    <div class="weakbox" id="hobble1"></div>
+    <div class="weakbox" id="blind1"></div>
+    <div class="weakbox" id="curse1"></div>
+    <div class="weakbox" id="charm1"></div>
+</div>
+<div class="monster" id="mon2" onclick="selectme(2)">
+    <div class="weakbox" id="icon2"></div>
+    <div class="weakbox" id="name2"></div>
+    <div class="weakbox" id="frizz2"></div>
+    <div class="weakbox" id="sizz2"></div>
+    <div class="weakbox" id="crack2"></div>
+    <div class="weakbox" id="woosh2"></div>
+    <div class="weakbox" id="bang2"></div>
+    <div class="weakbox" id="zap2"></div>
+    <div class="weakbox" id="zam2"></div>
+    <div class="weakbox" id="sleep2"></div>
+    <div class="weakbox" id="confusion2"></div>
+    <div class="weakbox" id="paralysis2"></div>
+    <div class="weakbox" id="stun2"></div>
+    <div class="weakbox" id="poison2"></div>
+    <div class="weakbox" id="plock2"></div>
+    <div class="weakbox" id="slock2"></div>
+    <div class="weakbox" id="mlock2"></div>
+    <div class="weakbox" id="block2"></div>
+    <div class="weakbox" id="hobble2"></div>
+    <div class="weakbox" id="blind2"></div>
+    <div class="weakbox" id="curse2"></div>
+    <div class="weakbox" id="charm2"></div>
+</div>
+<div class="monster" id="mon3" onclick="selectme(3)">
+    <div class="weakbox" id="icon3"></div>
+    <div class="weakbox" id="name3"></div>
+    <div class="weakbox" id="frizz3"></div>
+    <div class="weakbox" id="sizz3"></div>
+    <div class="weakbox" id="crack3"></div>
+    <div class="weakbox" id="woosh3"></div>
+    <div class="weakbox" id="bang3"></div>
+    <div class="weakbox" id="zap3"></div>
+    <div class="weakbox" id="zam3"></div>
+    <div class="weakbox" id="sleep3"></div>
+    <div class="weakbox" id="confusion3"></div>
+    <div class="weakbox" id="paralysis3"></div>
+    <div class="weakbox" id="stun3"></div>
+    <div class="weakbox" id="poison3"></div>
+    <div class="weakbox" id="plock3"></div>
+    <div class="weakbox" id="slock3"></div>
+    <div class="weakbox" id="mlock3"></div>
+    <div class="weakbox" id="block3"></div>
+    <div class="weakbox" id="hobble3"></div>
+    <div class="weakbox" id="blind3"></div>
+    <div class="weakbox" id="curse3"></div>
+    <div class="weakbox" id="charm3"></div>
+</div>
+<div class="monster" id="mon4" onclick="selectme(4)">
+    <div class="weakbox" id="icon4"></div>
+    <div class="weakbox" id="name4"></div>
+    <div class="weakbox" id="frizz4"></div>
+    <div class="weakbox" id="sizz4"></div>
+    <div class="weakbox" id="crack4"></div>
+    <div class="weakbox" id="woosh4"></div>
+    <div class="weakbox" id="bang4"></div>
+    <div class="weakbox" id="zap4"></div>
+    <div class="weakbox" id="zam4"></div>
+    <div class="weakbox" id="sleep4"></div>
+    <div class="weakbox" id="confusion4"></div>
+    <div class="weakbox" id="paralysis4"></div>
+    <div class="weakbox" id="stun4"></div>
+    <div class="weakbox" id="poison4"></div>
+    <div class="weakbox" id="plock4"></div>
+    <div class="weakbox" id="slock4"></div>
+    <div class="weakbox" id="mlock4"></div>
+    <div class="weakbox" id="block4"></div>
+    <div class="weakbox" id="hobble4"></div>
+    <div class="weakbox" id="blind4"></div>
+    <div class="weakbox" id="curse4"></div>
+    <div class="weakbox" id="charm4"></div>
+</div>
+<div class="monster" id="mon5" onclick="selectme(5)">
+    <div class="weakbox" id="icon5"></div>
+    <div class="weakbox" id="name5"></div>
+    <div class="weakbox" id="frizz5"></div>
+    <div class="weakbox" id="sizz5"></div>
+    <div class="weakbox" id="crack5"></div>
+    <div class="weakbox" id="woosh5"></div>
+    <div class="weakbox" id="bang5"></div>
+    <div class="weakbox" id="zap5"></div>
+    <div class="weakbox" id="zam5"></div>
+    <div class="weakbox" id="sleep5"></div>
+    <div class="weakbox" id="confusion5"></div>
+    <div class="weakbox" id="paralysis5"></div>
+    <div class="weakbox" id="stun5"></div>
+    <div class="weakbox" id="poison5"></div>
+    <div class="weakbox" id="plock5"></div>
+    <div class="weakbox" id="slock5"></div>
+    <div class="weakbox" id="mlock5"></div>
+    <div class="weakbox" id="block5"></div>
+    <div class="weakbox" id="hobble5"></div>
+    <div class="weakbox" id="blind5"></div>
+    <div class="weakbox" id="curse5"></div>
+    <div class="weakbox" id="charm5"></div>
+</div>
+<div>Meta Picks</div>
+<div class='monbox' id='Zoma' onclick="selectunit(19)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/158.jpg');"></div>
+<div class='monbox' id='Wight King' onclick="selectunit(18)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_4_i.png');"></div>
+<div class='monbox' id='Dragonlord' onclick="selectunit(2)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_128_i.png');"></div>
+<div class='monbox' id='Dragonlord True Form' onclick="selectunit(3)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/134.jpg');"></div>
+<div class='monbox' id='Emperor Slime' onclick="selectunit(4)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_89_i.png');"></div>
+<div class='monbox' id='Killer Machine' onclick="selectunit(9)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_83_i.png');"></div>
+<div class='monbox' id='Pickled Slime' onclick="selectunit(40)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_138_i.png')"></div>
+<div class='monbox' id='Hellion' onclick="selectunit(33)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_85_i.png')"></div>
+<div>S Rank</div>
+<div class='monbox' id='Archdemon' onclick="selectunit(0)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_3_i.png');"></div>
+<div class='monbox' id='Baramos' onclick="selectunit(1)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools/dq-tact/gacha/monster_147_i.png');"></div>
+<div class='monbox' id='Dragonlord' onclick="selectunit(2)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_128_i.png');"></div>
+<div class='monbox' id='Dragonlord True Form' onclick="selectunit(3)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/134.jpg');"></div>
+<div class='monbox' id='Emperor Slime' onclick="selectunit(4)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_89_i.png');"></div>
+<div class='monbox' id='Great Dragon' onclick="selectunit(5)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_2_i.png');"></div>
+<div class='monbox' id='Great Troll' onclick="selectunit(6)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_94_i.png');"></div>
+<div class='monbox' id='Hell Gladiator' onclick="selectunit(7)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_95_i.png');"></div>
+<div class='monbox' id='Hybird' onclick="selectunit(8)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_91_i.png');"></div>
+<div class='monbox' id='Killer Machine' onclick="selectunit(9)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_83_i.png');"></div>
+<div class='monbox' id='King She-Slime' onclick="selectunit(10)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_1_i.png');"></div>
+<div class='monbox' id='Metal Dragon' onclick="selectunit(11)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_93_i.png');"></div>
+<div class='monbox' id='Night Clubber' onclick="selectunit(12)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_92_i.png');"></div>
+<div class='monbox' id='Prism Peacock' onclick="selectunit(13)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_5_i.png');"></div>
+<div class='monbox' id='Queen Slime' onclick="selectunit(14)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_139_i.png');"></div>
+<div class='monbox' id='Royal Reptile' onclick="selectunit(15)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_84_i.png');"></div>
+<div class='monbox' id='Slionheart' onclick="selectunit(16)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_143_i.png');"></div>
+<div class='monbox' id='Squidzilla' onclick="selectunit(17)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_90_i.png');"></div>
+<div class='monbox' id='Wight King' onclick="selectunit(18)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_4_i.png');"></div>
+<div class='monbox' id='Zoma' onclick="selectunit(19)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/158.jpg');"></div>
+<div>A Rank</div>
+    <div class='monbox' id='Armful' onclick="selectunit(20)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/149.jpg')"></div>
+    <div class='monbox' id='Axesaurus' onclick="selectunit(21)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_97_i.png')"></div>
+    <div class='monbox' id='Bone Baron' onclick="selectunit(22)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_12_i.png')"></div>
+    <div class='monbox' id='Boreal Serpent' onclick="selectunit(23)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/151.jpg')"></div>
+    <div class='monbox' id='Boss Troll' onclick="selectunit(24)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/160.jpg')"></div>
+    <div class='monbox' id='Cosmic Chimaera' onclick="selectunit(25)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_129_i.png')"></div>
+    <div class='monbox' id='Dark Skeleton' onclick="selectunit(26)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_134_i.png')"></div>
+    <div class='monbox' id='Devilmoth' onclick="selectunit(27)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_8_i.png')"></div>
+    <div class='monbox' id='Dragon Slime' onclick="selectunit(28)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_140_i.png')"></div>
+    <div class='monbox' id='Dragon Zombie' onclick="selectunit(29)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_101_i.png')"></div>
+    <div class='monbox' id='Gigantes' onclick="selectunit(30)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_100_i.png')"></div>
+    <div class='monbox' id='Green Dragon' onclick="selectunit(31)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_14_i.png')"></div>
+    <div class='monbox' id='Handsome Crab' onclick="selectunit(32)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_99_i.png')"></div>
+    <div class='monbox' id='Hellion' onclick="selectunit(33)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_85_i.png')"></div>
+    <div class='monbox' id='King Bubble Slime' onclick="selectunit(34)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_141_i.png')"></div>
+    <div class='monbox' id='King Slime' onclick="selectunit(35)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_145_i.png')"></div>
+    <div class='monbox' id='Lethal Armour' onclick="selectunit(36)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_10_i.png')"></div>
+    <div class='monbox' id='Lime Slime' onclick="selectunit(37)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_144_i.png')"></div>
+    <div class='monbox' id='Living Statue' onclick="selectunit(38)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_9_i.png')"></div>
+    <div class='monbox' id='Moosifer' onclick="selectunit(39)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_13_i.png')"></div>
+    <div class='monbox' id='Pickled Slime' onclick="selectunit(40)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_138_i.png')"></div>
+    <div class='monbox' id='Silvapithecus' onclick="selectunit(41)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_11_i.png')"></div>
+    <div class='monbox' id='Slimecicle' onclick="selectunit(42)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_6_i.png')"></div>
+    <div class='monbox' id='Slimeshroom' onclick="selectunit(43)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_96_i.png')"></div>
+    <div class='monbox' id='Striking Sabrecat' onclick="selectunit(44)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_7_i.png')"></div>
+    <div class='monbox' id='Umbra' onclick="selectunit(45)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/159.jpg')"></div>
+    <div class='monbox' id='Wyrtoise' onclick="selectunit(46)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_98_i.png')"></div>
+<div>B Rank</div>
+    <div class='monbox' id='Bad Karmour' onclick="selectunit(47)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/23.jpg')"></div>
+    <div class='monbox' id='Beleth' onclick="selectunit(48)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/118.jpg')"></div>
+    <div class='monbox' id='Cyber Slime' onclick="selectunit(49)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_15_i.png')"></div>
+    <div class='monbox' id='Dragurn' onclick="selectunit(50)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_17_i.png')"></div>
+    <div class='monbox' id='Drake Slime' onclick="selectunit(51)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/143.jpg')"></div>
+    <div class='monbox' id='Drohl Drone' onclick="selectunit(52)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/78.jpg')"></div>
+    <div class='monbox' id='Gargoyle' onclick="selectunit(53)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/19.jpg')"></div>
+    <div class='monbox' id='Great Sabrecat' onclick="selectunit(54)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/93.jpg')"></div>
+    <div class='monbox' id='Hades Condor' onclick="selectunit(55)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_19_i.png')"></div>
+    <div class='monbox' id='Knight Aberrant' onclick="selectunit(56)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_25_i.png')"></div>
+    <div class='monbox' id='Lemon Slime' onclick="selectunit(57)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/16.jpg')"></div>
+    <div class='monbox' id='Medislime' onclick="selectunit(58)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/81.jpg')"></div>
+    <div class='monbox' id='Orc Chieftain' onclick="selectunit(59)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/20.jpg')"></div>
+    <div class='monbox' id='Raving Lunatick' onclick="selectunit(60)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/80.jpg')"></div>
+    <div class='monbox' id='Robbin Oodlum' onclick="selectunit(61)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_133_i.png')"></div>
+    <div class='monbox' id='Silhouette' onclick="selectunit(62)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/156.jpg')"></div>
+    <div class='monbox' id='Skelegon' onclick="selectunit(63)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/119.jpg')"></div>
+    <div class='monbox' id='Skeleton Soldier' onclick="selectunit(64)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/79.jpg')"></div>
+    <div class='monbox' id='Stone Golem' onclick="selectunit(65)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_23_i.png')"></div>
+    <div class='monbox' id='Tearwolf' onclick="selectunit(66)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/21.jpg')"></div>
+    <div class='monbox' id='Tuskateer' onclick="selectunit(67)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/126.jpg')"></div>
+    <div class='monbox' id='Whackolyte' onclick="selectunit(68)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/94.jpg')"></div>
+    <div class='monbox' id='Wharfhorse' onclick="selectunit(69)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_18_i.png')"></div>
+    <div class='monbox' id='Wyrtle' onclick="selectunit(70)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/153.jpg')"></div>
+<div>C Rank</div>
+    <div class='monbox' id='Angel Slime' onclick="selectunit(71)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_26_i.png')"></div>
+    <div class='monbox' id='Bodkin Fletcher' onclick="selectunit(72)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_37_i.png')"></div>
+    <div class='monbox' id='Buffalo Wing' onclick="selectunit(73)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_33_i.png')"></div>
+    <div class='monbox' id='Clawcerer' onclick="selectunit(74)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_32_i.png')"></div>
+    <div class='monbox' id='Corpse Corporal' onclick="selectunit(75)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/113.jpg')"></div>
+    <div class='monbox' id='Drackyma' onclick="selectunit(76)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/112.jpg')"></div>
+    <div class='monbox' id='Fightgeist' onclick="selectunit(77)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/39.jpg')"></div>
+    <div class='monbox' id='Goodybag' onclick="selectunit(78)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/115.jpg')"></div>
+    <div class='monbox' id='Grim Keeper' onclick="selectunit(79)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/105.jpg')"></div>
+    <div class='monbox' id='Hocus Chimaera' onclick="selectunit(80)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/116.jpg')"></div>
+    <div class='monbox' id='Hunter Mech' onclick="selectunit(81)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/104.jpg')"></div>
+    <div class='monbox' id='Freezing Fog' onclick="selectunit(82)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/157.jpg')"></div>
+    <div class='monbox' id='Jargon' onclick="selectunit(83)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/62.jpg')"></div>
+    <div class='monbox' id='Knight Errant' onclick="selectunit(84)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/128.jpg')"></div>
+    <div class='monbox' id='Lips' onclick="selectunit(85)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_30_i.png')"></div>
+    <div class='monbox' id='Man o War' onclick="selectunit(86)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/27.jpg')"></div>
+    <div class='monbox' id='Mandrake Mercenary' onclick="selectunit(87)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/28.jpg')"></div>
+    <div class='monbox' id='Metal Slime Knight' onclick="selectunit(88)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/99.jpg')"></div>
+    <div class='monbox' id='Minidemon' onclick="selectunit(89)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_36_i.png')"></div>
+    <div class='monbox' id='Mud Mannequin' onclick="selectunit(90)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_34_i.png')"></div>
+    <div class='monbox' id='Mummy Boy' onclick="selectunit(91)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_38_i.png')"></div>
+    <div class='monbox' id='Mushroom Mage' onclick="selectunit(92)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_31_i.png')"></div>
+    <div class='monbox' id='Phantom Fencer' onclick="selectunit(93)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/117.jpg')"></div>
+    <div class='monbox' id='Restless Armour' onclick="selectunit(94)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/120.jpg')"></div>
+    <div class='monbox' id='Salamander Fry' onclick="selectunit(95)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/29.jpg')"></div>
+    <div class='monbox' id='Scarewolf' onclick="selectunit(96)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/102.jpg')"></div>
+    <div class='monbox' id='Seaslime' onclick="selectunit(97)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/154.jpg')"></div>
+    <div class='monbox' id='Shadow' onclick="selectunit(98)" style="background-image: url('https://s3.ap-northeast-1.amazonaws.com/gamewith/article_tools%2Fdq-tact%2Fgacha%2Fmonster_35_i.png')"></div>
+    <div class='monbox' id='Tigercub' onclick="selectunit(99)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/129.jpg')"></div>
+<div>D Rank</div>
+    <div class='monbox' id='Arrghgoyle' onclick="selectunit(100)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/108.jpg')"></div>
+    <div class='monbox' id='Bag o Laughs' onclick="selectunit(101)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/84.jpg')"></div>
+    <div class='monbox' id='Bewarewolf' onclick="selectunit(102)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/95.jpg')"></div>
+    <div class='monbox' id='Cannibox' onclick="selectunit(103)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/43.jpg')"></div>
+    <div class='monbox' id='Chimaera' onclick="selectunit(104)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/110.jpg')"></div>
+    <div class='monbox' id='Crabid' onclick="selectunit(105)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/101.jpg')"></div>
+    <div class='monbox' id='Crack-billed Platypunk' onclick="selectunit(106)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/82.jpg')"></div>
+    <div class='monbox' id='Dancing Flame' onclick="selectunit(107)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/121.jpg')"></div>
+    <div class='monbox' id='Drackolyte' onclick="selectunit(108)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/83.jpg')"></div>
+    <div class='monbox' id='Drooling Ghoul' onclick="selectunit(109)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/46.jpg')"></div>
+    <div class='monbox' id='Golem' onclick="selectunit(110)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/42.jpg')"></div>
+    <div class='monbox' id='Great Sabrecub' onclick="selectunit(111)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/41.jpg')"></div>
+    <div class='monbox' id='Hawk Man' onclick="selectunit(112)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/45.jpg')"></div>
+    <div class='monbox' id='Hell Nino' onclick="selectunit(113)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/123.jpg')"></div>
+    <div class='monbox' id='Imp' onclick="selectunit(114)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/109.jpg')"></div>
+    <div class='monbox' id='Killing Machine Light' onclick="selectunit(115)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/106.jpg')"></div>
+    <div class='monbox' id='Mad Mole' onclick="selectunit(116)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/127.jpg')"></div>
+    <div class='monbox' id='Mandrake Major' onclick="selectunit(117)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/125.jpg')"></div>
+    <div class='monbox' id='Muddy Hand' onclick="selectunit(118)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/96.jpg')"></div>
+    <div class='monbox' id='Orc' onclick="selectunit(119)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/107.jpg')"></div>
+    <div class='monbox' id='Shell Slime' onclick="selectunit(120)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/44.jpg')"></div>
+    <div class='monbox' id='Slime Knight' onclick="selectunit(121)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/40.jpg')"></div>
+    <div class='monbox' id='Walking Corpse' onclick="selectunit(122)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/47.jpg')"></div>
+<div>E Rank</div>
+    <div class='monbox' id='Bodkin Archer' onclick="selectunit(123)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/53.jpg')"></div>
+    <div class='monbox' id='Brownie' onclick="selectunit(124)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/55.jpg')"></div>
+    <div class='monbox' id='Bubble Slime' onclick="selectunit(125)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/114.jpg')"></div>
+    <div class='monbox' id='Bullfinch' onclick="selectunit(126)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/85.jpg')"></div>
+    <div class='monbox' id='Cactiball' onclick="selectunit(127)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/97.jpg')"></div>
+    <div class='monbox' id='Carnivine' onclick="selectunit(128)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/124.jpg')"></div>
+    <div class='monbox' id='Drackmage' onclick="selectunit(129)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/90.jpg')"></div>
+    <div class='monbox' id='Firespirit' onclick="selectunit(130)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/122.jpg')"></div>
+    <div class='monbox' id='Funghoul' onclick="selectunit(131)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/54.jpg')"></div>
+    <div class='monbox' id='Healslime' onclick="selectunit(132)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/51.jpg')"></div>
+    <div class='monbox' id='Jailcat' onclick="selectunit(133)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/88.jpg')"></div>
+    <div class='monbox' id='Leery Lout' onclick="selectunit(134)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/63.jpg')"></div>
+    <div class='monbox' id='Lickspittle' onclick="selectunit(135)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/49.jpg')"></div>
+    <div class='monbox' id='Mecha-Mynah' onclick="selectunit(136)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/52.jpg')"></div>
+    <div class='monbox' id='Meowgician' onclick="selectunit(137)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/86.jpg')"></div>
+    <div class='monbox' id='She-Slime' onclick="selectunit(138)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/89.jpg')"></div>
+    <div class='monbox' id='Skeleton' onclick="selectunit(139)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/48.jpg')"></div>
+    <div class='monbox' id='Spiked Hare' onclick="selectunit(140)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/155.jpg')"></div>
+    <div class='monbox' id='Stump Chump' onclick="selectunit(141)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/87.jpg')"></div>
+    <div class='monbox' id='Teeny Sanguini' onclick="selectunit(142)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/50.jpg')"></div>
+<div>F Rank</div>
+    <div class='monbox' id='Bunicorn' onclick="selectunit(143)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/56.jpg')"></div>
+    <div class='monbox' id='Candy Cat' onclick="selectunit(144)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/58.jpg')"></div>
+    <div class='monbox' id='Dracky' onclick="selectunit(145)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/57.jpg')"></div>
+    <div class='monbox' id='Ghost' onclick="selectunit(146)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/59.jpg')"></div>
+    <div class='monbox' id='Hammerhood' onclick="selectunit(147)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/111.jpg')"></div>
+    <div class='monbox' id='Mischievous Mole' onclick="selectunit(148)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/98.jpg')"></div>
+    <div class='monbox' id='Platypunk' onclick="selectunit(149)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/92.jpg')"></div>
+    <div class='monbox' id='Slime' onclick="selectunit(150)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/91.jpg')"></div>
+    <div class='monbox' id='Stark Raven' onclick="selectunit(151)" style="background-image: url('https://img.altema.jp/dqtact/monster/icon/152.jpg')"></div>
+
+</body>
+</html>

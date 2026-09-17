@@ -1,0 +1,88 @@
+body {
+   background-color: #ffeeaa;
+}
+
+.monster {
+   height: 50px;
+   padding: 0px;
+   margin: 0px;
+   display: table-row;
+}
+
+.headrow {
+   height: 30px;
+   padding: 0px;
+   margin: 0px;
+   display: table-row;
+}
+
+#mon1, #mon3, #mon5 {
+   background-color: #ffda75;
+}
+
+.headrow, #mon2, #mon4 {
+   background-color: #ffde85;
+}
+
+.headrow .weakbox {
+   margin: auto;
+   border-top: 1px solid #ffc014;
+   border-right: 1px solid #ffc014;
+   border-bottom: 1px solid #ffc014;
+   display: table-cell;
+   text-align: center;
+   background-size: 30px 30px;
+   background-repeat: no-repeat;
+}
+.headrow #icon {
+    width:48px;
+}
+.headrow #name {
+    width:200px;
+}
+
+.monster .weakbox {
+   width: 35px;
+   padding: 10px 0px 10px 0px;
+   border-top: 1px solid #ffc014;
+   border-right: 1px solid #ffc014;
+   border-bottom: 1px solid #ffc014;
+   display: table-cell;
+   text-align: center;
+}
+
+#icon, #icon1, #icon2, #icon3, #icon4, #icon5 {
+   width: 38px;
+}
+#frizz, #frizz1, #frizz2, #frizz3, #frizz4, #frizz5 {
+   background-color: #ff7777;
+}
+#sizz, #sizz1, #sizz2, #sizz3, #sizz4, #sizz5 {
+   background-color: #ffda75;
+}
+#crack, #crack1, #crack2, #crack3, #crack4, #crack5 {
+   background-color: #7777e0;
+}
+#woosh, #woosh1, #woosh2, #woosh3, #woosh4, #woosh5 {
+   background-color: #77e077;
+}
+#bang, #bang1, #bang2, #bang3, #bang4, #bang5 {
+   background-color: #bbbb66;
+}
+#zap, #zap1, #zap2, #zap3, #zap4, #zap5 {
+   background-color: #ffffaa;
+}
+#zam, #zam1, #zam2, #zam3, #zam4, #zam5 {
+   background-color: #cc66cc;
+}
+
+.monbox {
+   width: 54px;
+   height: 58px;
+   border: 2px solid #ffc014;
+   background-color: #ffc014;
+   display: table-cell;
+   text-align: center;
+   background-size: 50px 50px;
+   background-repeat: no-repeat;
+}
